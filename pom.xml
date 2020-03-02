@@ -14,12 +14,23 @@
         <aws-java-sdk-sqs.version>1.11.728</aws-java-sdk-sqs.version>
     </properties>
 
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Adapter to use SQS queues as part of citrus tests.</description>
+    <url>https://github.com/dimovelev/citrus-sqs</url>
+
     <developers>
         <developer>
             <name>Dimo Velev</name>
             <email>dimo.velev@gmail.com</email>
         </developer>
     </developers>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
 
     <scm>
         <connection>scm:git:git@github.com:dimovelev/citrus-sqs.git</connection>
@@ -144,11 +155,6 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
                         <version>3.1.1</version>
-                        <!--                        <configuration>-->
-                        <!--                            <additionalparam>-Xdoclint:none</additionalparam>-->
-                        <!--                            <additionalOptions>-Xdoclint:none</additionalOptions>-->
-                        <!--                            <additionalJOption>-Xdoclint:none</additionalJOption>-->
-                        <!--                        </configuration>-->
                         <executions>
                             <execution>
                                 <id>attach-javadocs</id>
